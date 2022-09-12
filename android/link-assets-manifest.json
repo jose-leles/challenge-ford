@@ -1,0 +1,41 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Estedad-Black.ttf",
+      "sha1": "d62a015855b7f87219c4b09857286f6550d6b437"
+    },
+    {
+      "path": "src/assets/fonts/Estedad-Bold.ttf",
+      "sha1": "8d40addf06b7c24bc22093467a8d94341f7d2a98"
+    },
+    {
+      "path": "src/assets/fonts/Estedad-ExtraBold.ttf",
+      "sha1": "37cb688b64e3f833fd2c3e8e914dcde3ab07bd61"
+    },
+    {
+      "path": "src/assets/fonts/Estedad-ExtraLight.ttf",
+      "sha1": "faeeb694e81d82593ad4693d31c2eac615678993"
+    },
+    {
+      "path": "src/assets/fonts/Estedad-Light.ttf",
+      "sha1": "262cd6faf580ff7ad982b778b968c4937a4a091f"
+    },
+    {
+      "path": "src/assets/fonts/Estedad-Medium.ttf",
+      "sha1": "486d73794182e5bacba89a6662dd2b06de2946ba"
+    },
+    {
+      "path": "src/assets/fonts/Estedad-Regular.ttf",
+      "sha1": "8cb280b679004269057a6f51b0e16aef64e3db78"
+    },
+    {
+      "path": "src/assets/fonts/Estedad-SemiBold.ttf",
+      "sha1": "7aa9b2f659046792e6ed2a9d00f223722303d189"
+    },
+    {
+      "path": "src/assets/fonts/Estedad-Thin.ttf",
+      "sha1": "cb3e87eef2f068f8c8fc3101979ba31eb8ce4dcf"
+    }
+  ]
+}

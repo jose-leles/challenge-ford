@@ -14,6 +14,15 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-challengeford-challengefordTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-challengeford-challengefordTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9BF052C6D0EA4AA7840B1F1F /* Estedad-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 672C68D54C09403FA37C962E /* Estedad-Black.ttf */; };
+		D52BA320DD6E4C5699279213 /* Estedad-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A83F36D091463991FB6790 /* Estedad-Bold.ttf */; };
+		F2C2A6E63BFE43159992B949 /* Estedad-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4DCF78E3F2647A28922E1BB /* Estedad-ExtraBold.ttf */; };
+		4F19E21B71A8414CACB1D36D /* Estedad-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA2BB77E40354AEE9C6DA91D /* Estedad-ExtraLight.ttf */; };
+		51662D1443C44285AEE58F40 /* Estedad-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C83D552C8084E599EC9F8CC /* Estedad-Light.ttf */; };
+		95B5E0245AF145B490374A23 /* Estedad-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1056DF443DD47A88DE28536 /* Estedad-Medium.ttf */; };
+		55AC5E05BC454B0881DFE49B /* Estedad-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C515ECDAD5DC461CAC40B46C /* Estedad-Regular.ttf */; };
+		016C44ECEBA74E5AA0267D69 /* Estedad-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2493DC93BB21498FA34D8B6B /* Estedad-SemiBold.ttf */; };
+		221D8D9CA39140F897D74ABE /* Estedad-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F108AD9870948BBBF3E7859 /* Estedad-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = challengeford/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-challengeford-challengefordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challengeford-challengefordTests.release.xcconfig"; path = "Target Support Files/Pods-challengeford-challengefordTests/Pods-challengeford-challengefordTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		672C68D54C09403FA37C962E /* Estedad-Black.ttf */ = {isa = PBXFileReference; name = "Estedad-Black.ttf"; path = "../src/assets/fonts/Estedad-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A2A83F36D091463991FB6790 /* Estedad-Bold.ttf */ = {isa = PBXFileReference; name = "Estedad-Bold.ttf"; path = "../src/assets/fonts/Estedad-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B4DCF78E3F2647A28922E1BB /* Estedad-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Estedad-ExtraBold.ttf"; path = "../src/assets/fonts/Estedad-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EA2BB77E40354AEE9C6DA91D /* Estedad-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Estedad-ExtraLight.ttf"; path = "../src/assets/fonts/Estedad-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7C83D552C8084E599EC9F8CC /* Estedad-Light.ttf */ = {isa = PBXFileReference; name = "Estedad-Light.ttf"; path = "../src/assets/fonts/Estedad-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C1056DF443DD47A88DE28536 /* Estedad-Medium.ttf */ = {isa = PBXFileReference; name = "Estedad-Medium.ttf"; path = "../src/assets/fonts/Estedad-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C515ECDAD5DC461CAC40B46C /* Estedad-Regular.ttf */ = {isa = PBXFileReference; name = "Estedad-Regular.ttf"; path = "../src/assets/fonts/Estedad-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2493DC93BB21498FA34D8B6B /* Estedad-SemiBold.ttf */ = {isa = PBXFileReference; name = "Estedad-SemiBold.ttf"; path = "../src/assets/fonts/Estedad-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4F108AD9870948BBBF3E7859 /* Estedad-Thin.ttf */ = {isa = PBXFileReference; name = "Estedad-Thin.ttf"; path = "../src/assets/fonts/Estedad-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +140,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				9D857A20629B43E988FB1272 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +166,23 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		9D857A20629B43E988FB1272 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				672C68D54C09403FA37C962E /* Estedad-Black.ttf */,
+				A2A83F36D091463991FB6790 /* Estedad-Bold.ttf */,
+				B4DCF78E3F2647A28922E1BB /* Estedad-ExtraBold.ttf */,
+				EA2BB77E40354AEE9C6DA91D /* Estedad-ExtraLight.ttf */,
+				7C83D552C8084E599EC9F8CC /* Estedad-Light.ttf */,
+				C1056DF443DD47A88DE28536 /* Estedad-Medium.ttf */,
+				C515ECDAD5DC461CAC40B46C /* Estedad-Regular.ttf */,
+				2493DC93BB21498FA34D8B6B /* Estedad-SemiBold.ttf */,
+				4F108AD9870948BBBF3E7859 /* Estedad-Thin.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +280,15 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				9BF052C6D0EA4AA7840B1F1F /* Estedad-Black.ttf in Resources */,
+				D52BA320DD6E4C5699279213 /* Estedad-Bold.ttf in Resources */,
+				F2C2A6E63BFE43159992B949 /* Estedad-ExtraBold.ttf in Resources */,
+				4F19E21B71A8414CACB1D36D /* Estedad-ExtraLight.ttf in Resources */,
+				51662D1443C44285AEE58F40 /* Estedad-Light.ttf in Resources */,
+				95B5E0245AF145B490374A23 /* Estedad-Medium.ttf in Resources */,
+				55AC5E05BC454B0881DFE49B /* Estedad-Regular.ttf in Resources */,
+				016C44ECEBA74E5AA0267D69 /* Estedad-SemiBold.ttf in Resources */,
+				221D8D9CA39140F897D74ABE /* Estedad-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
