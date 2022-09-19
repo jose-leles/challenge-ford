@@ -1,16 +1,26 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-import React from 'react';
-import {useColorScheme, FlatList, Image} from 'react-native';
+import React, {useState} from 'react';
+import {
+    useColorScheme,
+    FlatList,
+    Image,
+    ScrollView,
+    KeyboardAvoidingView,
+} from 'react-native';
 
 // @ts-ignore
 import Icon from 'react-native-vector-icons/FontAwesome';
 // @ts-ignore
-import DropShadow from 'react-native-drop-shadow';
+import Video from 'react-native-video';
 import * as S from './style';
 
 import imagemCarro from '../../assets/images/carro.png';
 
 export const Vehicle = (props: any) => {
+    const [url, setUrl] = useState<string>('http://');
+    const [urlVideo, setUrlVideo] = useState<string>(
+        'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+    );
     return (
         <S.Container>
             <S.Header>
@@ -47,6 +57,32 @@ export const Vehicle = (props: any) => {
                     Atualizado 0 minutos atrás
                 </S.StatusAtualizado>
             </S.BoxAtualizacao>
+
+            <Video
+                source={{
+                    uri: urlVideo,
+                }}
+                style={{
+                    marginTop: 15,
+                    width: '90%',
+                    height: '35%',
+                    borderColor: '',
+                }}
+                muted={false}
+                repeat={true}
+                resizeMode={'cover'}
+                volume={1.0}
+                rate={1.0}
+                ignoreSilentSwitch={'obey'}
+            />
+            <S.InputHolder>
+                <S.InputUrl
+                    value={url}
+                    onChange={(text: string) => setUrl(text)}></S.InputUrl>
+                <S.ButtonUrl onPress={() => setUrlVideo(url)}>
+                    <S.ButtonText>Ir</S.ButtonText>
+                </S.ButtonUrl>
+            </S.InputHolder>
 
             <S.MenuBottom>
                 <S.MenuItem selected={false} onPress={() => {}}>

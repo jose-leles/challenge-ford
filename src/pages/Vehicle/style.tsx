@@ -77,6 +77,24 @@ export const StatusAtualizado = styled.Text`
     font-family: 'Estedad-SemiBold';
     font-size: 15px;
 `;
+export const InputHolder = styled.View`
+    flex-direction: row;
+    width: 90%;
+`;
+export const InputUrl = styled.TextInput`
+    width: 80%;
+    background-color: #cccccc;
+    color: #000;
+`;
+export const ButtonUrl = styled.TouchableOpacity`
+    width: 20%;
+    background-color: #5ce65c;
+    justify-content: center;
+    align-items: center;
+`;
+export const ButtonText = styled.Text`
+    color: #000;
+`;
 
 export const MenuBottom = styled.View`
     position: absolute;
