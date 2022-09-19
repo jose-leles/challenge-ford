@@ -1,10 +1,11 @@
 import React from 'react';
 import {Text, useColorScheme} from 'react-native';
-import Home from './pages/Home/Home';
+import Router from './pages/Router';
 
 const App = () => {
+    return <Router></Router>;
     // Use Title and Wrapper like any other React component – except they're styled!
-    return <Home />;
+    // return <Home />;
 };
 
 export default App;

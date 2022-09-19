@@ -7,10 +7,12 @@ import imagemLigarCarro from '../../assets/images/io-icon.png';
 import imagemTravarCarro from '../../assets/images/locked-icon.png';
 import imagemDestravarCarro from '../../assets/images/unlocked-icon.png';
 
+// @ts-ignore
 import Icon from 'react-native-vector-icons/FontAwesome';
 // @ts-ignore
 import DropShadow from 'react-native-drop-shadow';
 import * as S from './style';
+import {NavigationProp} from '@react-navigation/native';
 const shadowStyle = {
     shadowColor: '#000',
     shadowOffset: {
@@ -29,17 +31,14 @@ const notificationShadowStyle = {
     shadowOpacity: 0.5,
     shadowRadius: 3,
 };
-export const Home = () => {
+interface HomeProps {
+    route: any;
+    navigation: any;
+}
+export const Home = (props: HomeProps) => {
     return (
         <S.Container>
             <S.Header>
-                <S.VoltarSeta>
-                    <Icon
-                        name="chevron-left"
-                        size={20}
-                        color="#000"
-                        onPress={() => {}}></Icon>
-                </S.VoltarSeta>
                 <S.CaixaSelecao>
                     <S.OpcaoText>Minha Ranger</S.OpcaoText>
                     <S.OpcaoSeta>
@@ -112,7 +111,52 @@ export const Home = () => {
                 )}
                 horizontal={true}
             />
-            <S.MenuBottom></S.MenuBottom>
+            <S.MenuBottom>
+                <S.MenuItem selected={true} onPress={() => {}}>
+                    <S.MenuIcon>
+                        <Icon
+                            name="home"
+                            size={27}
+                            color={true ? '#444859' : '#737373'}
+                        />
+                    </S.MenuIcon>
+                    <S.MenuText>Home</S.MenuText>
+                </S.MenuItem>
+                <S.MenuItem
+                    selected={false}
+                    onPress={() => {
+                        props.navigation.navigate('Vehicle');
+                    }}>
+                    <S.MenuIcon>
+                        <Icon
+                            name="car"
+                            size={23}
+                            color={false ? '#444859' : '#737373'}
+                        />
+                    </S.MenuIcon>
+                    <S.MenuText>Veículo</S.MenuText>
+                </S.MenuItem>
+                <S.MenuItem selected={false} onPress={() => {}}>
+                    <S.MenuIcon>
+                        <Icon
+                            name="wrench"
+                            size={25}
+                            color={false ? '#444859' : '#737373'}
+                        />
+                    </S.MenuIcon>
+                    <S.MenuText>Serviços</S.MenuText>
+                </S.MenuItem>
+                <S.MenuItem selected={false} onPress={() => {}}>
+                    <S.MenuIcon>
+                        <Icon
+                            name="map"
+                            size={20}
+                            color={false ? '#444859' : '#737373'}
+                        />
+                    </S.MenuIcon>
+                    <S.MenuText>Mapa</S.MenuText>
+                </S.MenuItem>
+            </S.MenuBottom>
         </S.Container>
     );
 };
