@@ -20,6 +20,7 @@
     "react-native-vector-icons": "^9.2.0",
     "react-native-video": "^5.2.1",
     "react-native-video-player": "^0.14.0",
+    "react-native-webview": "^11.23.1",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {

@@ -1,26 +1,29 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
     useColorScheme,
     FlatList,
     Image,
     ScrollView,
+    View,
     KeyboardAvoidingView,
 } from 'react-native';
 
 // @ts-ignore
 import Icon from 'react-native-vector-icons/FontAwesome';
 // @ts-ignore
-import Video from 'react-native-video';
+// import Video from 'react-native-video';
+import {WebView} from 'react-native-webview';
 import * as S from './style';
 
 import imagemCarro from '../../assets/images/carro.png';
 
 export const Vehicle = (props: any) => {
-    const [url, setUrl] = useState<string>('http://');
     const [urlVideo, setUrlVideo] = useState<string>(
-        'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        'http://192.168.0.112:81/stream',
+        //'https://www.google.com',
     );
+
     return (
         <S.Container>
             <S.Header>
@@ -57,32 +60,47 @@ export const Vehicle = (props: any) => {
                     Atualizado 0 minutos atrás
                 </S.StatusAtualizado>
             </S.BoxAtualizacao>
-
-            <Video
-                source={{
-                    uri: urlVideo,
-                }}
-                style={{
-                    marginTop: 15,
-                    width: '90%',
-                    height: '35%',
-                    borderColor: '',
-                }}
-                muted={false}
-                repeat={true}
-                resizeMode={'cover'}
-                volume={1.0}
-                rate={1.0}
-                ignoreSilentSwitch={'obey'}
-            />
-            <S.InputHolder>
+            {/* {urlVideo && ( 
+                // <Video
+                //     source={{uri: urlVideo}}
+                //     style={{
+                //         marginTop: 15,
+                //         width: '90%',
+                //         height: '35%',
+                //     }}
+                //     rate={1.0}
+                //     volume={0}
+                //     muted={false}
+                //     paused={false}
+                //     resizeMode="contain"
+                //     repeat={true}
+                //     playInBackground={false}
+                //     playWhenInactive={false}
+                //     progressUpdateInterval={250.0}
+                //     onLoad={() => setState({onBuffer: false})}
+                //     onError={() => setState({onBuffer: true})}
+                // />
+                
+            // )}*/}
+            <View style={{marginTop: 15, width: '90%', height: '40%'}}>
+                <WebView
+                    source={{uri: urlVideo}}
+                    onError={err => console.log(err)}
+                    style={{
+                        backgroundColor: '#000',
+                        borderColor: '#000',
+                        borderWidth: 1,
+                    }}
+                />
+            </View>
+            {/* <S.InputHolder>
                 <S.InputUrl
                     value={url}
                     onChange={(text: string) => setUrl(text)}></S.InputUrl>
                 <S.ButtonUrl onPress={() => setUrlVideo(url)}>
                     <S.ButtonText>Ir</S.ButtonText>
                 </S.ButtonUrl>
-            </S.InputHolder>
+            </S.InputHolder> */}
 
             <S.MenuBottom>
                 <S.MenuItem selected={false} onPress={() => {}}>
