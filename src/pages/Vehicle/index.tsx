@@ -7,6 +7,8 @@ import {
     ScrollView,
     View,
     KeyboardAvoidingView,
+    TextInput,
+    TouchableOpacity,
 } from 'react-native';
 
 // @ts-ignore
@@ -19,10 +21,17 @@ import * as S from './style';
 import imagemCarro from '../../assets/images/carro.png';
 
 export const Vehicle = (props: any) => {
-    const [urlVideo, setUrlVideo] = useState<string>(
-        'http://192.168.0.112:81/stream',
-        //'https://www.google.com',
-    );
+    const [ipCamera, setipCamera] = useState<string>('192.168.43.46');
+    const [showInput, setShowInput] = useState<boolean>(false);
+
+    const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    <body style="heigth:100%; width:100%;flex: 1">
+        <img style="heigth:100%; width:100%; flex: 1" src="http://${ipCamera}:81/stream" />
+    </body>
+    </html>
+    `;
 
     return (
         <S.Container>
@@ -60,31 +69,10 @@ export const Vehicle = (props: any) => {
                     Atualizado 0 minutos atrás
                 </S.StatusAtualizado>
             </S.BoxAtualizacao>
-            {/* {urlVideo && ( 
-                // <Video
-                //     source={{uri: urlVideo}}
-                //     style={{
-                //         marginTop: 15,
-                //         width: '90%',
-                //         height: '35%',
-                //     }}
-                //     rate={1.0}
-                //     volume={0}
-                //     muted={false}
-                //     paused={false}
-                //     resizeMode="contain"
-                //     repeat={true}
-                //     playInBackground={false}
-                //     playWhenInactive={false}
-                //     progressUpdateInterval={250.0}
-                //     onLoad={() => setState({onBuffer: false})}
-                //     onError={() => setState({onBuffer: true})}
-                // />
-                
-            // )}*/}
-            <View style={{marginTop: 15, width: '90%', height: '40%'}}>
+
+            <View style={{marginTop: 15, width: '90%', height: '32%'}}>
                 <WebView
-                    source={{uri: urlVideo}}
+                    source={{html}}
                     onError={err => console.log(err)}
                     style={{
                         backgroundColor: '#000',
@@ -93,14 +81,28 @@ export const Vehicle = (props: any) => {
                     }}
                 />
             </View>
-            {/* <S.InputHolder>
-                <S.InputUrl
-                    value={url}
-                    onChange={(text: string) => setUrl(text)}></S.InputUrl>
-                <S.ButtonUrl onPress={() => setUrlVideo(url)}>
-                    <S.ButtonText>Ir</S.ButtonText>
-                </S.ButtonUrl>
-            </S.InputHolder> */}
+            <View
+                style={{
+                    height: 50,
+                    width: '100%',
+                }}>
+                {showInput ? (
+                    <TextInput
+                        style={{height: '100%', width: '100%'}}
+                        onChangeText={text => setipCamera(text)}
+                        onBlur={() => setShowInput(false)}
+                    />
+                ) : (
+                    <TouchableOpacity
+                        style={{
+                            height: '100%',
+                            width: '100%',
+                            backgroundColor: '#fff0',
+                        }}
+                        onPress={() => setShowInput(!showInput)}
+                    />
+                )}
+            </View>
 
             <S.MenuBottom>
                 <S.MenuItem selected={false} onPress={() => {}}>
